@@ -22,14 +22,14 @@ const array = [
 ];
 
 let groupByAge = arr => {
-    let obj = {}
+    
+    let obj = {};
     arr.forEach(el => {
         let a = el.age;
         if(!obj[a]){
-           obj[a] = [];
-           obj[a].push(el) 
+           obj[a] = [el];
         }else{
-            obj[a].push(el) 
+            obj[a].push(el); 
         }
         
     });
